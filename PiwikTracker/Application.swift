@@ -1,8 +1,8 @@
 import UIKit
 
-internal struct Application {
+public struct Application {
     /// Creates an returns a new application object representing the current application
-    static func makeCurrentApplication() ->  Application {
+    public static func makeCurrentApplication() ->  Application {
         let displayName = bundleDisplayNameForCurrentApplication()
         let name = bundleNameForCurrentApplication()
         let version = bundleVersionForCurrentApplication()
@@ -11,16 +11,16 @@ internal struct Application {
     }
     
     /// The name of your app as displayed on the homescreen i.e. "My App"
-    let bundleDisplayName: String?
+    public let bundleDisplayName: String?
     
     /// The bundle name of your app i.e. "com.my-company.my-app"
-    let bundleName: String?
+    public let bundleName: String?
     
     /// The bundle version a.k.a. build number as String i.e. "149"
-    let bundleVersion: String?
+    public let bundleVersion: String?
     
     /// The app version as String i.e. "1.0.1"
-    let bundleShortVersion: String?
+    public let bundleShortVersion: String?
     
     /// Returns the name of the app as displayed on the homescreen
     private static func bundleDisplayNameForCurrentApplication() -> String? {
