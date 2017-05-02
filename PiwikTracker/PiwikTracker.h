@@ -165,7 +165,7 @@ typedef NS_ENUM(NSUInteger, CustomVariableScope) {
 // Turning this ON will potentially use more battery power. The tracker will only react to significant location changes to reduce battery impact. Location changes will not be tracked when the app is terminated or running in the background.
 // Please note that users can decided to not allow the app to access location information from the general Settings app.
 // */
-//@property (nonatomic) BOOL includeLocationInformation;
+@property (nonatomic) BOOL includeLocationInformation;
 
 
 /**
